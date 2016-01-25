@@ -10,4 +10,4 @@ POSTGIS_DB_NAME = 'traveltimematrices'
 IP_ADDRESS = 'localhost'
 POSTGIS_PORT = 5432
 POSTGIS_USERNAME = 'postgres'
-POSTGIS_PWD = 'metropaccess13'
+POSTGIS_PWD = 'xxx'
