@@ -7,10 +7,10 @@ Producing the Helsinki Region Travel CO2 Matrix 2015 included following __analys
      2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_allday_kavely.lsf)
  
  1. Travel time / distance calculations by __Public Transportation__ using [MetropAccess-Reititin](reititin/README.md)
-     1. Rush hour (08:00-09:00)
+     1. __Rush hour__ (08:00-09:00)
          1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_pt_rushhour.json)
          2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_rushhour_joukkoliikenne.lsf)
-     1. Midday (12:00-13:00)
+     1. __Midday_ (12:00-13:00)
          1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_pt_midday.json)
          2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_midday_joukkoliikenne.lsf)
  
