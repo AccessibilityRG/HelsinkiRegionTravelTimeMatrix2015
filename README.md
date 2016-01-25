@@ -39,10 +39,6 @@ Modelling library patronage patterns and their related CO2-emissions](http://www
 - Salonen, M., Toivonen, T. & Vaattovaara, M. (2012). Arkiliikkumisen vaihtoehdoista monikeskuksistuvassa metropolissa: Kaksi näkökulmaa palvelujen saavutettavuuteen pääkaupunkiseudulla.
 Yhdyskuntasuunnittelu 3/2012
 
-
-
-
-
 ## <a name="attributes"></a>Attributes of Helsinki Region Travel Time Matrix 2015
 
 | Attribute | Definition |
@@ -97,9 +93,13 @@ at the Department of Geosciences and Geography, University of Helsinki, Finland.
  
 Following people have contributed / are responsible for creating this dataset:
 
- - [Henrikki Tenkanen](http://blogs.helsinki.fi/accessibility/people_and_contact/) (PhD candidate, contact person regarding the dataset, in charge of the analyses / calculations)
- - Vuokko Heikinheimo (PhD candidate, accessibility calculations, documentation)
+ - [Henrikki Tenkanen](http://blogs.helsinki.fi/accessibility/people_and_contact/) (PhD candidate, project manager, participation in all steps)
+ - Vuokko Heikinheimo (PhD candidate, dataset production, documentation)
  - Tuuli Toivonen (PI, leader of the research group)
+ - Maria Salonen (project manager, participation in all steps)
+ - Juha Järvi (BusFaster Ltd, programming and design of the MetropAccess-Reitin)
+ - Timo Jaakkola (development of the travel time model for private cars)
+ 
  
 In addition, we thank [CSC - IT Center for Science](https://www.csc.fi/) for computational resources and help. 
 CSC Taito and cPouta computing clusters were used as our workhorses to calculate the travel times/distances (approx. 1 billion routes were calculated) 
