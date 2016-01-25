@@ -28,10 +28,20 @@ More information on how the Helsinki Region Travel CO2 Matrix 2015 was calculate
  
 __Scientific examples__ of the approach used here can be read from the following articles:
 
+- Laatikainen, T., H. Tenkanen, M. Kyttä & T. Toivonen (2015). [Comparing conventional and PPGIS approaches in measuring equality of access to urban aquatic environments.](http://www.sciencedirect.com/science/article/pii/S0169204615001590) Landscape and Urban Planning 144, 22–33.
+- Toivonen, T., M. Salonen, H. Tenkanen, P. Saarsalmi, T. Jaakkola & J. Järvi (2014). [Joukkoliikenteellä, autolla ja kävellen: Avoin saavutettavuusaineisto pääkaupunkiseudulla.](http://www.helsinki.fi/science/accessibility/publications/Toivonen_etal_2014_terra.pdf) Terra 126: 3, 127-136. 
+- Salonen, M. & Toivonen, T. (2013). [Modelling travel time in urban networks: comparable measures for private car and public transport.](http://www.sciencedirect.com/science/article/pii/S096669231300121X) Journal of Transport Geography 31, 143–153.
+- Jaakkola, T. (2013). [Paikkatietopohjainen menetelmä autoilun ajoaikojen ja kokonaismatka-aikojen mallintamiseen – esimerkkinä pääkaupunkiseutu.](http://www.helsinki.fi/science/accessibility/publications/TimoJaakkola_Paikkatietopohjainen_menetelma_autoilun_ajoaikojen_ja_kokonaismatka-aikojen_mallintamiseen.pdf) Pro gradu -tutkielma. Helsingin yliopisto. 
+Geotieteiden ja maantieteen laitos.
 - Lahtinen, J., Salonen, M. & Toivonen, T. (2013). [Facility allocation strategies and the sustainability of service delivery: 
 Modelling library patronage patterns and their related CO2-emissions](http://www.sciencedirect.com/science/article/pii/S014362281300163X). Applied Geography 44, 43-52.
+- Jäppinen,  S., Toivonen, T. & Salonen, M. (2013). [Modelling the potential effect of shared bicycles on public transport travel times in Greater Helsinki: An open data approach.](http://www.sciencedirect.com/science/article/pii/S014362281300132X) Applied Geography 43, 13-24.
+- Salonen, M., Toivonen, T. & Vaattovaara, M. (2012). Arkiliikkumisen vaihtoehdoista monikeskuksistuvassa metropolissa: Kaksi näkökulmaa palvelujen saavutettavuuteen pääkaupunkiseudulla.
+Yhdyskuntasuunnittelu 3/2012
 
-- Salonen, M. & Toivonen, T. (2013). [Modelling travel time in urban networks: comparable measures for private car and public transport.](http://www.sciencedirect.com/science/article/pii/S096669231300121X) Journal of Transport Geography 31, 143–153.
+
+
+
 
 ## <a name="attributes"></a>Attributes of Helsinki Region Travel Time Matrix 2015
 
