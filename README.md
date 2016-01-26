@@ -81,7 +81,7 @@ __Toivonen, T., M. Salonen, H. Tenkanen, P. Saarsalmi, T. Jaakkola & J. Järvi (
 Joukkoliikenteellä, autolla ja kävellen: Avoin saavutettavuusaineisto pääkaupunkiseudulla. Terra 126: 3, 127-136.__ 
 
 DOI name for the dataset:
-__Toivonen, T., H. Tenkanen, V. Heikinheimo, T. Jaakkola, J. Järvi & M. Salonen (2016). Helsinki Region-Travel Time Matrix 2015. DOI: 10.13140/RG.2.1.1901.3201__
+__Toivonen, T., H. Tenkanen, V. Heikinheimo, T. Jaakkola, J. Järvi & M. Salonen (2016). Helsinki Region Travel Time Matrix 2015. DOI: 10.13140/RG.2.1.1901.3201__
 
 ## <a name="codes"></a>Codes
 
