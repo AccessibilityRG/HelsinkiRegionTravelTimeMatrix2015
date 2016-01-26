@@ -72,7 +72,7 @@ If the datasets are being used extensively in scientific research, we welcome th
 
 ## <a name="how-to-cite"></a>Citation practices
 
-If you use Helsinki Region-Travel Time Matrix 2015 dataset or related tools in your work, we encourage you to cite properly to our work.
+If you use Helsinki Region Travel Time Matrix 2015 dataset or related tools in your work, we encourage you to cite properly to our work.
 
 You can cite to our work as follows:
 
@@ -81,7 +81,7 @@ __Toivonen, T., M. Salonen, H. Tenkanen, P. Saarsalmi, T. Jaakkola & J. Järvi (
 Joukkoliikenteellä, autolla ja kävellen: Avoin saavutettavuusaineisto pääkaupunkiseudulla. Terra 126: 3, 127-136.__ 
 
 DOI name for the dataset:
-__Toivonen, T., H. Tenkanen, V. Heikinheimo, T. Jaakkola, J. Järvi & M. Salonen (2015). Helsinki Region-Travel Time Matrix 2015. DOI: 10.13140/RG.2.1.1901.3201__
+__Toivonen, T., H. Tenkanen, V. Heikinheimo, T. Jaakkola, J. Järvi & M. Salonen (2016). Helsinki Region-Travel Time Matrix 2015. DOI: 10.13140/RG.2.1.1901.3201__
 
 ## <a name="codes"></a>Codes
 
