@@ -7,6 +7,9 @@ __Contents:__
 - [What is Helsinki Region Travel Time Matrix 2015?](#what-is)
 - [Attributes of Helsinki Region Travel Time Matrix 2015](#attributes)
 - [How calculations were done?](#calculations)
+  - [Public Transport](#pt)
+  - [Walking](#walk)
+  - [Private car](#car)
 - [Licence](#license)
 - [How to cite this work?](#how-to-cite)
 - [Codes](#codes)
@@ -61,6 +64,8 @@ Yhdyskuntasuunnittelu 3/2012
  
 ## <a name="calculations"></a>How calculations were done?
 
+### <a>name="pt"</a>Public Transport
+
 __The routes by public transportation__ have been calculated by using the __[MetropAccess-Reititin](http://blogs.helsinki.fi/accessibility/reititin/)__ tool which also takes
 into account the whole travel chains from the origin to the destination:
 
@@ -80,8 +85,12 @@ Calculations of 2015 MetropAccess-Travel Time Matrix are __based on schedules of
  - Midday (optimized between 12:00-13:00 ) --> Comparable with 1st version of Helsinki Region Travel Time Matrix (2013)
  - Rush hour (optimized between 08:00-09:00) --> New for 2015 version of TTM!
 
+### <a>name="walk"</a>Walking
+
 __The routes by walking__ were also calculated using the MetropAccess-Reititin by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
 The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HRT Journey Planner (also in the calculations by public transportation).
+
+### <a>name="car"</a>Private car
 
 __The routes by car__ have been calculated in ArcGIS 10.2 software by using the OD Cost Matrix tool in the Network Analyst toolkit. [MetropAccess-Digiroad](http://blogs.helsinki.fi/accessibility/data/metropaccess-digiroad/) (modified from the original Digiroad dataprovided by Finnish Transport Agency) has been used as Network Dataset in which the travel times of the road segments are made more realistic by adding crossroad impedances for different road classes. 
 The calculations have been repeated for two times of the day using: 
