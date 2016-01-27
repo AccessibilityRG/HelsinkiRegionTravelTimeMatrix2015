@@ -101,7 +101,7 @@ All calculations were done using the computing resources of CSC-IT Center for Sc
 
 ## <a name="license"></a>Licence
 
-Helsinki Region Travel Time Matrix 2015 by Accessibility Research Group (University of Helsinki) is licensed under a Creative Commons Attribution 4.0 International License. 
+Helsinki Region Travel Time Matrix 2015 by Accessibility Research Group / MetropAccess-project (University of Helsinki) is licensed under a Creative Commons Attribution 4.0 International License. 
 More information about license: http://creativecommons.org/licenses/by/4.0/
 
 If the datasets are being used extensively in scientific research, we welcome the opportunity for co-authorship of papers. Please contact project leader to discuss about the matter.
