@@ -76,12 +76,12 @@ If you use Helsinki Region Travel Time Matrix 2015 dataset or related tools in y
 
 You can cite to our work as follows:
 
-Data/Tools description:
-__Toivonen, T., M. Salonen, H. Tenkanen, P. Saarsalmi, T. Jaakkola & J. Järvi (2014). 
-Joukkoliikenteellä, autolla ja kävellen: Avoin saavutettavuusaineisto pääkaupunkiseudulla. Terra 126: 3, 127-136.__ 
+__Data/Tools description:__
+ - Toivonen, T., M. Salonen, H. Tenkanen, P. Saarsalmi, T. Jaakkola & J. Järvi (2014). 
+Joukkoliikenteellä, autolla ja kävellen: Avoin saavutettavuusaineisto pääkaupunkiseudulla. Terra 126: 3, 127-136.
 
-DOI name for the dataset:
-__Toivonen, T., H. Tenkanen, V. Heikinheimo, T. Jaakkola, J. Järvi & M. Salonen (2016). Helsinki Region Travel Time Matrix 2015. DOI: 10.13140/RG.2.1.1901.3201__
+__DOI name for the dataset:__
+- Toivonen, T., H. Tenkanen, V. Heikinheimo, T. Jaakkola, J. Järvi & M. Salonen (2016). Helsinki Region Travel Time Matrix 2015. DOI: 10.13140/RG.2.1.1901.3201
 
 ## <a name="codes"></a>Codes
 
