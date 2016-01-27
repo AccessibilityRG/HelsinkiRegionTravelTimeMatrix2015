@@ -2,11 +2,11 @@
 
 Producing the Helsinki Region Travel CO2 Matrix 2015 included following __analysis / processing steps__:
  
- 1. Travel time / distance calculations by __Walking__ using [MetropAccess-Reititin](reititin/README.md)
+ 1. Travel time / distance calculations by __Walking__ using [MetropAccess-Reititin](MetropAccess-Reititin/README.md)
      1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_kavely_allDay.json)
      2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_allday_kavely.lsf)
  
- 2. Travel time / distance calculations by __Public Transportation__ using [MetropAccess-Reititin](reititin/README.md)
+ 2. Travel time / distance calculations by __Public Transportation__ using [MetropAccess-Reititin](MetropAccess-Reititin/README.md)
      1. __Rush hour__ (08:00-09:00)
          1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_pt_rushhour.json)
          2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_rushhour_joukkoliikenne.lsf)
@@ -14,11 +14,11 @@ Producing the Helsinki Region Travel CO2 Matrix 2015 included following __analys
          1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_pt_midday.json)
          2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_midday_joukkoliikenne.lsf)
  
- 3. Travel time / distance calculations by __Private Car__ using [MetropAccess-Digiroad tool](reititin/README.md)
-     1. __Rush hour__ (08:00-09:00)
+ 3. Travel time / distance calculations by __Private Car__ using [MetropAccess-Digiroad tool](MetropAccess-Digiroad/README.md) that was slightly modified for CSC cPouta environment.
+     1. __Rush hour__ (07:00-09:00 & 15:00-17:00)
          1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_pt_rushhour.json)
          2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_rushhour_joukkoliikenne.lsf)
-     1. __Midday__ (12:00-13:00)
+     1. __Midday__ (09:00-15:00)
          1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_pt_midday.json)
          2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_midday_joukkoliikenne.lsf)
  
