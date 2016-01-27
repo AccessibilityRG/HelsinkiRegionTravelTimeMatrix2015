@@ -61,7 +61,7 @@ Yhdyskuntasuunnittelu 3/2012
  
 ## <a name="calculations"></a>How calculations were done?
 
-The routes by __public transportation__ have been calculated by using the __[MetropAccess-Reititin](http://blogs.helsinki.fi/accessibility/reititin/)__ tool which also takes
+__The routes by public transportation__ have been calculated by using the __[MetropAccess-Reititin](http://blogs.helsinki.fi/accessibility/reititin/)__ tool which also takes
 into account the whole travel chains from the origin to the destination:
 
  1. *possible waiting at home before leaving*
@@ -80,21 +80,22 @@ Calculations of 2015 MetropAccess-Travel Time Matrix are __based on schedules of
  - Midday (optimized between 12:00-13:00 ) --> Comparable with 1st version of Helsinki Region Travel Time Matrix (2013)
  - Rush hour (optimized between 08:00-09:00) --> New for 2015 version of TTM!
 
-The routes by walking were also calculated using the MetropAccess-Reititin by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
-The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HSL Journey Planner (also in the calculations by public transportation).
+__The routes by walking__ were also calculated using the MetropAccess-Reititin by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
+The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HRT Journey Planner (also in the calculations by public transportation).
 
-
-The routes by __car__ have been calculated in ArcGIS 10.2 software by using the OD Cost Matrix tool in the Network Analyst toolkit. [MetropAccess-Digiroad](http://blogs.helsinki.fi/accessibility/data/metropaccess-digiroad/) (modified from the original Digiroad dataprovided by Finnish Transport Agency) has been used as Network Dataset in which the travel times of the road segments are made more realistic by adding crossroad impedances for different road classes. 
-The calculations have been repeated for two times of the day using 1) the "midday impedance" (i.e. travel times outside rush hour) and 2) the "rush hour impendance" as impedance in the calculations.
+__The routes by car__ have been calculated in ArcGIS 10.2 software by using the OD Cost Matrix tool in the Network Analyst toolkit. [MetropAccess-Digiroad](http://blogs.helsinki.fi/accessibility/data/metropaccess-digiroad/) (modified from the original Digiroad dataprovided by Finnish Transport Agency) has been used as Network Dataset in which the travel times of the road segments are made more realistic by adding crossroad impedances for different road classes. 
+The calculations have been repeated for two times of the day using: 
+ - the "midday impedance" (i.e. travel times outside rush hour) 
+ - the "rush hour impendance" as impedance in the calculations.
 
 The whole travel chain ("door-to-door approach") is taken into account in the calculations: 
 
- 1. walking time from the real origin to the nearest network location (based on Euclidean distance), 
- 2. average walking time from the origin to the parking lot,
- 3. travel time from parking lot to destination, 
- 4. average time for searching a parking lot, 
- 5. walking time from parking lot to nearest network location of the destination and 
- 6. walking time from network location to the real destination (based on Euclidean distance).
+ 1. *walking time from the real origin to the nearest network location (based on Euclidean distance)* 
+ 2. *average walking time from the origin to the parking lot*
+ 3. *travel time from parking lot to destination* 
+ 4. *average time for searching a parking lot* 
+ 5. *walking time from parking lot to nearest network location of the destination* 
+ 6. *walking time from network location to the real destination (based on Euclidean distance)*
 
 All calculations were done using the computing resources of CSC-IT Center for Science (https://www.csc.fi/home).
 
