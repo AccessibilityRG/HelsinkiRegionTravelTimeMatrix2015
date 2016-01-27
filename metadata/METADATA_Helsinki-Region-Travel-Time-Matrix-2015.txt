@@ -69,6 +69,25 @@ NODATA values have been described as value -1.
 -----------------
 METHODS
 -----------------
+The routes by PUBLIC TRANSPORATION have been calculated by using the MetropAccess-Reititin tool which also takes into account the whole travel chains from the origin to the destination:
+1) possible waiting at home before leaving,
+2) walking from home to the transit stop,
+3) waiting at the transit stop,
+4) travel time to next transit stop,
+5) transport mode change,
+6) travel time to next transit stop and
+7) walking to the destination.
+
+Travel times by public transportation have been optimized using 10 different departure times within the calculation hour using so called Golomb ruler.
+The fastest route from these calculations are selected for the final travel time matrix.
+
+Calculations of 2015 MetropAccess-Travel Time Matrix are based on schedules of Monday 28.09.2015:
+1) Midday (optimized between 12:00-13:00 ) --> Comparable with 1st version of Helsinki Region Travel Time Matrix (2013)
+2) Rush hour (optimized between 08:00-09:00) --> New for 2015 version of TTM!
+
+The routes by walking were also calculated using the MetropAccess-Reititin by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
+The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HSL Journey Planner (also in the calculations by public transportation).
+
 
 The routes by CAR have been calculated in ArcGIS 10.2 software by using the OD Cost Matrix tool in the Network Analyst toolkit. MetropAccess-Digiroad (modified from the original Digiroad data
 provided by Finnish Transport Agency) has been used as Network Dataset in which the travel times of the road segments are made more realistic by adding crossroad impedances for different road classes. 
@@ -81,25 +100,6 @@ The whole travel chain ("door-to-door approach") is taken into account in the ca
 4) average time for searching a parking lot, 
 5) walking time from parking lot to nearest network location of the destination and 
 6) walking time from network location to the real destination (based on Euclidean distance).
-
-The routes by PUBLIC TRANSPORATION have been calculated by using the MetropAccess-Reititin tool which also takes into account the whole travel chains from the origin to the destination:
-1) possible waiting at home before leaving, 
-2) walking from home to the transit stop, 
-3) waiting at the transit stop, 
-4) travel time to next transit stop, 
-5) transport mode change, 
-6) travel time to next transit stop and 
-7) walking to the destination. 
-
-Travel times by public transportation have been optimized using 10 different departure times within the calculation hour using so called Golomb ruler. 
-The fastest route from these calculations are selected for the final travel time matrix.
-
-Calculations of 2015 MetropAccess-Travel Time Matrix are based on schedules of Monday 28.09.2015:
-1) Midday (optimized between 12:00-13:00 ) --> Comparable with 1st version of Helsinki Region Travel Time Matrix (2013)
-2) Rush hour (optimized between 08:00-09:00) --> New for 2015 version of TTM!
-
-The routes by walking were also calculated using the MetropAccess-Reititin by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
-The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HSL Journey Planner (also in the calculations by public transportation).
 
 All calculations were done using the computing resources of CSC-IT Center for Science (https://www.csc.fi/home).
 
@@ -219,7 +219,6 @@ tt   | total time = kokonaisaika
 d    | distance = etäisyys
 --------------------------------------------
 
-
 Kenttien tietosisältö on kuvattu alla:
 _______________________________________________________________________________________________________________________________________________
 from_id  |  Reitin lähtöpisteenä olleen YKR-ruudun ID-tunnus
@@ -244,21 +243,6 @@ NODATA-arvot on kuvattu arvolla -1.
 TUOTANTOHISTORIA
 -----------------
 
-AUTOREITITYS on tehty ArcGIS 10.2 -ohjelmiston OD Cost Matrix -työkalulla. Tieverkkoaineistona on käytetty Liikenneviraston kehittämän Digiroad-aineiston (Digiroad K) pohjalta muokattua MetropAccess-Digiroadia,
-jossa segmenttien läpikulkuajat on muutettu realistisemmiksi määrittämällä tieluokkakohtaisia risteyshidasteita. Laskennan impedanssina on käytetty tieverkkoaineiston matka-aikakoja ruuhka-aikaan ja keskipäivällä.
-
-Laskennoissa on huomioitu lisäksi kokonaismatkaketjut:
-1) euklidinen etäisyys todellisesta lähtöpisteestä lähimpään verkostoviivakohteeseen,
-2) keskimääräinen kävelyaika pysäköintipaikalle,
-3) matka-aika autolla lähtöpisteestä kohdepisteeseen,
-4) keskimääräinen pysäköintipaikan etsimiseen kuluva aika,
-5) kävely pysäköintipaikalta kohteeseen ja
-6) euklidinen etäisyys verkostoviivakohteesta todelliseen määränpäähän.
-
-Lisätietoja löytyy Timo Jaakkolan pro gradu -työstä sekä vuoden 2014 Terran artikkelistamme:
-"Joukkoliikenteellä, autolla ja kävellen: Avoin saavutettavuusaineisto pääkaupunkiseudulla." (ks. lopun viitteet).
-
-
 JOUKKOLIIKENNEREITITYS on tehty MetropAccess-Reititin työkalulla, joka huomioi kokonaismatkaketjut joukkoliikenteellä lähtöpisteestä kohteeseen:
 1) mahdollinen odottelu kotona, 
 2) kävely pysäkille,
@@ -279,8 +263,21 @@ Keskipäivän tulokset ovat vertailukelpoisia matka-aikamatriisin ensimmäisen v
 Kävelyreititys on myös laskettu MetropAccess-Reitittimellä säätämällä joukkoliikennevälineet pois käytöstä erillisestä asetustiedostosta, jolloin reitit perustuvat ainoastaan Open Street Mapin geometriaan.
 Sekä joukkoliikenne että kävelyajossa kävelynopeudeksi on asetettu reittioppaan oletus 70 metriä minuutissa.
 
-Kaikki laskennat on tehty hyödyntäen CSC:n laskentaresursseja (https://www.csc.fi/home).
+AUTOREITITYS on tehty ArcGIS 10.2 -ohjelmiston OD Cost Matrix -työkalulla. Tieverkkoaineistona on käytetty Liikenneviraston kehittämän Digiroad-aineiston (Digiroad K) pohjalta muokattua MetropAccess-Digiroadia,
+jossa segmenttien läpikulkuajat on muutettu realistisemmiksi määrittämällä tieluokkakohtaisia risteyshidasteita. Laskennan impedanssina on käytetty tieverkkoaineiston matka-aikakoja ruuhka-aikaan ja keskipäivällä.
 
+Laskennoissa on huomioitu lisäksi kokonaismatkaketjut:
+1) euklidinen etäisyys todellisesta lähtöpisteestä lähimpään verkostoviivakohteeseen,
+2) keskimääräinen kävelyaika pysäköintipaikalle,
+3) matka-aika autolla lähtöpisteestä kohdepisteeseen,
+4) keskimääräinen pysäköintipaikan etsimiseen kuluva aika,
+5) kävely pysäköintipaikalta kohteeseen ja
+6) euklidinen etäisyys verkostoviivakohteesta todelliseen määränpäähän.
+
+Lisätietoja löytyy Timo Jaakkolan pro gradu -työstä sekä vuoden 2014 Terran artikkelistamme:
+"Joukkoliikenteellä, autolla ja kävellen: Avoin saavutettavuusaineisto pääkaupunkiseudulla." (ks. lopun viitteet).
+
+Kaikki laskennat on tehty hyödyntäen CSC:n laskentaresursseja (https://www.csc.fi/home).
 
 --------------------------------
 TUOTANTOON OSALLISTUNEET TAHOT
