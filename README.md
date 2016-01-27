@@ -77,8 +77,8 @@ The fastest route from these calculations are selected for the final travel time
 
 Calculations of 2015 MetropAccess-Travel Time Matrix are based on schedules of Monday 28.09.2015:
 
- 1. Midday (optimized between 12:00-13:00 ) --> Comparable with 1st version of Helsinki Region Travel Time Matrix (2013)
- 2. Rush hour (optimized between 08:00-09:00) --> New for 2015 version of TTM!
+ - Midday (optimized between 12:00-13:00 ) --> Comparable with 1st version of Helsinki Region Travel Time Matrix (2013)
+ - Rush hour (optimized between 08:00-09:00) --> New for 2015 version of TTM!
 
 The routes by walking were also calculated using the MetropAccess-Reititin by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
 The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HSL Journey Planner (also in the calculations by public transportation).
