@@ -66,7 +66,6 @@ car_m_d	 |  Distance in meters of the private car route in midday traffic
 
 NODATA values have been described as value -1. 
 
-
 -----------------
 METHODS
 -----------------
@@ -96,10 +95,10 @@ Travel times by public transportation have been optimized using 10 different dep
 The fastest route from these calculations are selected for the final travel time matrix.
 
 Calculations of 2015 MetropAccess-Travel Time Matrix are based on schedules of Monday 28.09.2015:
-1) Midday (optimized between 12:00-13:00 ) --> Comparable with 1st version of MetropAccess-Travel Time Matrix 
+1) Midday (optimized between 12:00-13:00 ) --> Comparable with 1st version of Helsinki Region Travel Time Matrix (2013)
 2) Rush hour (optimized between 08:00-09:00) --> New for 2015 version of TTM!
 
-The routes by walking were also calculated using the MetropAccess-Reititin by disabling all motorized transport modesin the calculation. Thus, all routes are based on the Open Street Map geometry.
+The routes by walking were also calculated using the MetropAccess-Reititin by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
 The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HSL Journey Planner (also in the calculations by public transportation).
 
 All calculations were done using the computing resources of CSC-IT Center for Science (https://www.csc.fi/home).
@@ -169,7 +168,7 @@ Jäppinen,  S., Toivonen, T. & Salonen, M. (2013). Modelling the potential effec
 LICENSE
 ---------
 
-Helsinki Region-Travel Time Matrix by MetropAccess-project/ Accessibility Research Group (University of Helsinki) is licensed under a Creative Commons Attribution 4.0 International License. 
+Helsinki Region-Travel Time Matrix by Accessibility Research Group / MetropAccess-project (University of Helsinki) is licensed under a Creative Commons Attribution 4.0 International License.
 More information about license: http://creativecommons.org/licenses/by/4.0/
 
 If the datasets are being used extensively in scientific research, we welcome the opportunity for co-authorship of papers. Please contact project leader to discuss about the matter.
@@ -275,7 +274,7 @@ Matka-matriisi 2015:n julkisen liikenteen reititykset perustuvat maanantain 28.9
 
 Lisätietoja haarukoinnista MetropAccess-Reitittimen käyttöohjeesta.
 
-Keskipäivän tulokset ovat vertailukelpoisia matka-aikamatriisin ensimmäisen version kanssa (vuodelta 2014). Ruuhka-ajan tulokset ovat uusi ominaisuus vuoden 2015 matka-aikamatriisissa.
+Keskipäivän tulokset ovat vertailukelpoisia matka-aikamatriisin ensimmäisen version kanssa (Helsinki Region Travel Time Matrix 2013). Ruuhka-ajan tulokset ovat uusi ominaisuus vuoden 2015 matka-aikamatriisissa.
 
 Kävelyreititys on myös laskettu MetropAccess-Reitittimellä säätämällä joukkoliikennevälineet pois käytöstä erillisestä asetustiedostosta, jolloin reitit perustuvat ainoastaan Open Street Mapin geometriaan.
 Sekä joukkoliikenne että kävelyajossa kävelynopeudeksi on asetettu reittioppaan oletus 70 metriä minuutissa.
@@ -345,7 +344,7 @@ Jäppinen,  S., Toivonen, T. & Salonen, M. (2013). Modelling the potential effec
 LISENSSI 
 ---------
 
-Pääkaupunkiseudun-Matka-aikamatriisi, jonka tekijä on MetropAccess-hanke / Accessibility Research Group (Helsingin Yliopisto) on lisensoitu Creative Commons Nimeä 4.0 Kansainvälinen -lisenssillä.
+Pääkaupunkiseudun matka-aikamatriisi 2015, jonka tekijä on Accessibility Research Group / MetropAccess-hanke (Helsingin Yliopisto) on lisensoitu Creative Commons Nimeä 4.0 Kansainvälinen -lisenssillä.
 Lisätietoa lisenssistä: http://creativecommons.org/licenses/by/4.0/deed.fi
 
 Mikäli aineiston pohjalta laaditaan tieteellisiä julkaisuja, toivomme, että tekijät olisivat yhteydessä hankkeen johtajaan.
