@@ -88,7 +88,7 @@ The calculations have been repeated for two times of the day using:
  - the "midday impedance" (i.e. travel times outside rush hour) 
  - the "rush hour impendance" as impedance in the calculations.
 
-The whole travel chain ( *"door-to-door approach"* ) is taken into account in the calculations: 
+__The whole travel chain__ ( *"door-to-door approach"* ) is taken into account in the calculations: 
 
  1. *walking time from the real origin to the nearest network location (based on Euclidean distance)* 
  2. *average walking time from the origin to the parking lot*
