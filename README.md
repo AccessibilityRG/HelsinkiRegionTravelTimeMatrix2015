@@ -87,7 +87,7 @@ Calculations of 2015 MetropAccess-Travel Time Matrix are __based on schedules of
 
 ### <a name="walk"></a>Walking
 
-__The routes by walking__ were also calculated using the MetropAccess-Reititin by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
+__The routes by walking__ were also calculated using the __[MetropAccess-Reititin](http://blogs.helsinki.fi/accessibility/reititin/)__ by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
 The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HRT Journey Planner (also in the calculations by public transportation).
 
 ### <a name="car"></a>Private car
