@@ -61,7 +61,42 @@ Yhdyskuntasuunnittelu 3/2012
  
 ## <a name="calculations"></a>How calculations were done?
 
-Add documentation here.    
+The routes by __public transportation__ have been calculated by using the __[MetropAccess-Reititin](http://blogs.helsinki.fi/accessibility/reititin/)__ tool which also takes
+into account the whole travel chains from the origin to the destination:
+
+ 1. possible waiting at home before leaving,
+ 2. walking from home to the transit stop,
+ 3. waiting at the transit stop,
+ 4. travel time to next transit stop,
+ 5. transport mode change,
+ 6. travel time to next transit stop and
+ 7. walking to the destination.
+
+Travel times by public transportation have been optimized using 10 different departure times within the calculation hour using so called Golomb ruler.
+The fastest route from these calculations are selected for the final travel time matrix.
+
+Calculations of 2015 MetropAccess-Travel Time Matrix are based on schedules of Monday 28.09.2015:
+
+ 1. Midday (optimized between 12:00-13:00 ) --> Comparable with 1st version of Helsinki Region Travel Time Matrix (2013)
+ 2. Rush hour (optimized between 08:00-09:00) --> New for 2015 version of TTM!
+
+The routes by walking were also calculated using the MetropAccess-Reititin by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
+The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HSL Journey Planner (also in the calculations by public transportation).
+
+
+The routes by __car__ have been calculated in ArcGIS 10.2 software by using the OD Cost Matrix tool in the Network Analyst toolkit. [MetropAccess-Digiroad](http://blogs.helsinki.fi/accessibility/data/metropaccess-digiroad/) (modified from the original Digiroad dataprovided by Finnish Transport Agency) has been used as Network Dataset in which the travel times of the road segments are made more realistic by adding crossroad impedances for different road classes. 
+The calculations have been repeated for two times of the day using 1) the "midday impedance" (i.e. travel times outside rush hour) and 2) the "rush hour impendance" as impedance in the calculations.
+
+The whole travel chain ("door-to-door approach") is taken into account in the calculations: 
+
+ 1. walking time from the real origin to the nearest network location (based on Euclidean distance), 
+ 2. average walking time from the origin to the parking lot,
+ 3. travel time from parking lot to destination, 
+ 4. average time for searching a parking lot, 
+ 5. walking time from parking lot to nearest network location of the destination and 
+ 6. walking time from network location to the real destination (based on Euclidean distance).
+
+All calculations were done using the computing resources of CSC-IT Center for Science (https://www.csc.fi/home).
 
 ## <a name="license"></a>Licence
 
@@ -88,7 +123,7 @@ __DOI name for the dataset:__
 All the codes and analysis steps that have been used to produce the Helsinki Region Travel Time Matrix 2015 are documented separately in [here](codes/). 
 
 ## <a name="contact"></a>Contribution / Contact
-Helsinki Region Travel Time Matrix 2015 was created by the [Accessibility Research Group](http://www.helsinki.fi/science/accessibility) 
+__Helsinki Region Travel Time Matrix 2015__ was created by the [Accessibility Research Group](http://www.helsinki.fi/science/accessibility) 
 at the Department of Geosciences and Geography, University of Helsinki, Finland.
  
 Following people have contributed / are responsible for creating this dataset:
