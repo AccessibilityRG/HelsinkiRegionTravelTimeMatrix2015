@@ -87,12 +87,16 @@ Calculations of 2015 MetropAccess-Travel Time Matrix are __based on schedules of
 
 ### <a name="walk"></a>Walking
 
-__The routes by walking__ were also calculated using the __[MetropAccess-Reititin](http://blogs.helsinki.fi/accessibility/reititin/)__ by disabling all motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
+__The routes by walking__ were also calculated using the __[MetropAccess-Reititin](http://blogs.helsinki.fi/accessibility/reititin/)__ by disabling all
+motorized transport modes in the calculation. Thus, all routes are based on the Open Street Map geometry.
 The walking speed has been adjusted to 70 meters per minute, which is the default speed in the HRT Journey Planner (also in the calculations by public transportation).
 
 ### <a name="car"></a>Private car
 
-__The routes by car__ have been calculated in ArcGIS 10.2 software by using __[MetropAccess-Digiroad tool](http://blogs.helsinki.fi/accessibility/digiroad-tool/)__. [MetropAccess-Digiroad](http://blogs.helsinki.fi/accessibility/data/metropaccess-digiroad/) (modified from the original Digiroad dataprovided by Finnish Transport Agency) has been used as Network Dataset in which the travel times of the road segments are made more realistic by adding crossroad impedances for different road classes. 
+__The routes by car__ have been calculated in ArcGIS 10.2 software by using __[MetropAccess-Digiroad tool](http://blogs.helsinki.fi/accessibility/digiroad-tool/)__.
+[MetropAccess-Digiroad dataset](http://blogs.helsinki.fi/accessibility/data/metropaccess-digiroad/) (modified from the original Digiroad data provided by Finnish Transport Agency)
+has been used as Network Dataset in which the travel times of the road segments are made more realistic by adding crossroad impedances for different road classes.
+ 
 The calculations have been repeated for two times of the day using: 
  - the "midday impedance" (i.e. travel times outside rush hour) 
  - the "rush hour impendance" as impedance in the calculations.
