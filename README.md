@@ -92,7 +92,7 @@ The walking speed has been adjusted to 70 meters per minute, which is the defaul
 
 ### <a name="car"></a>Private car
 
-__The routes by car__ have been calculated in ArcGIS 10.2 software by using the OD Cost Matrix tool in the Network Analyst toolkit. [MetropAccess-Digiroad](http://blogs.helsinki.fi/accessibility/data/metropaccess-digiroad/) (modified from the original Digiroad dataprovided by Finnish Transport Agency) has been used as Network Dataset in which the travel times of the road segments are made more realistic by adding crossroad impedances for different road classes. 
+__The routes by car__ have been calculated in ArcGIS 10.2 software by using __[MetropAccess-Digiroad tool](http://blogs.helsinki.fi/accessibility/digiroad-tool/)__. [MetropAccess-Digiroad](http://blogs.helsinki.fi/accessibility/data/metropaccess-digiroad/) (modified from the original Digiroad dataprovided by Finnish Transport Agency) has been used as Network Dataset in which the travel times of the road segments are made more realistic by adding crossroad impedances for different road classes. 
 The calculations have been repeated for two times of the day using: 
  - the "midday impedance" (i.e. travel times outside rush hour) 
  - the "rush hour impendance" as impedance in the calculations.
