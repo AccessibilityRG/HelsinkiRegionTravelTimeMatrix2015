@@ -12,7 +12,7 @@ __Contents:__
   - [Private car](#car)
 - [Licence](#license)
 - [How to cite this work?](#how-to-cite)
-- [Codes](#codes)
+- [Codes](#code-repo)
 - [Contribution / Contact](#contact)
 
 ## <a name="what-is"></a>What is Helsinki Region Travel Time Matrix 2015?
@@ -132,7 +132,7 @@ Joukkoliikenteellä, autolla ja kävellen: Avoin saavutettavuusaineisto pääkau
 __DOI name for the dataset:__
 - Toivonen, T., H. Tenkanen, V. Heikinheimo, T. Jaakkola, J. Järvi & M. Salonen (2016). Helsinki Region Travel Time Matrix 2015. DOI: 10.13140/RG.2.1.1901.3201
 
-## <a name="codes"></a>Codes
+## <a name="code-repo"></a>Codes
 
 All the codes and analysis steps that have been used to produce the Helsinki Region Travel Time Matrix 2015 are documented separately in [here](codes/). 
 
