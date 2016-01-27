@@ -64,13 +64,13 @@ Yhdyskuntasuunnittelu 3/2012
 The routes by __public transportation__ have been calculated by using the __[MetropAccess-Reititin](http://blogs.helsinki.fi/accessibility/reititin/)__ tool which also takes
 into account the whole travel chains from the origin to the destination:
 
- 1. possible waiting at home before leaving,
- 2. walking from home to the transit stop,
- 3. waiting at the transit stop,
- 4. travel time to next transit stop,
- 5. transport mode change,
- 6. travel time to next transit stop and
- 7. walking to the destination.
+ 1. *possible waiting at home before leaving*
+ 2. *walking from home to the transit stop*
+ 3. *waiting at the transit stop*
+ 4. *travel time to next transit stop*
+ 5. *transport mode change*
+ 6. *travel time to next transit stop*
+ 7. *walking to the destination*
 
 Travel times by public transportation have been optimized using 10 different departure times within the calculation hour using so called Golomb ruler.
 The fastest route from these calculations are selected for the final travel time matrix.
