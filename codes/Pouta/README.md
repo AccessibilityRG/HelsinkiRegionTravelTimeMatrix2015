@@ -1,4 +1,4 @@
-# Pouta Configurations
+#Pouta Configurations
 
 Documentation regarding cPouta Linux Server configurations for ArcGIS Server.
 
@@ -10,7 +10,7 @@ After ArcGIS installation is done, it is assumed that arcgis has been installed 
    
 If you are following these instructions change the paths accordingly to your own filepaths. 
     
-## Contents:
+##Contents:
 
  - [Install ArcGIS 10.3.1 for Server Linux + dependencies](#arcgis-install)
      - [Dependencies](#dependencies)
@@ -23,7 +23,7 @@ If you are following these instructions change the paths accordingly to your own
  - [Install Python stuff using Anaconda2 (64 bit)](#python-install)
  - [How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?](#how-to-run)
  
-## <a name='arcgis-install'></a> Install ArcGIS Server for Linux
+##<a name='arcgis-install'></a>Install ArcGIS Server for Linux
 
 ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We got the installation package from CSC. 
 
@@ -60,7 +60,7 @@ ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We 
             ulimit -Hn -Hu
             ulimit -Sn -Su
 
-### <a name='install-software'></a> ArcGIS installation process 
+###<a name='install-software'></a>ArcGIS installation process 
 
 Installation process is straightforward (read the manual).
    
@@ -98,7 +98,7 @@ Installation process is straightforward (read the manual).
       
         
  
-## <a name='python-install'></a> Install Python stuff using Anaconda2 
+## <a name='python-install'></a>Install Python stuff using Anaconda2 
 
 Some parts of the Travel Time/CO2 Matrix calculations were done using Geopandas module instead of arcpy since table processing/management is MUCH faster in pure Python than using ArcGIS.
 Because of this Anaconda2 was installed using conda/pip to the server (64 bit), plus following Python modules:
@@ -108,8 +108,6 @@ Because of this Anaconda2 was installed using conda/pip to the server (64 bit), 
    - pyproj 
    - Fiona
    
- 
 
-
-## <a name='how-to-run'></a> How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?
+## <a name='how-to-run'></a>How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?
  
