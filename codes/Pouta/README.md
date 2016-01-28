@@ -73,7 +73,8 @@ Installation process is straightforward (read the manual).
             startserver.sh
         
         
-       - For convenience following script does it
+       - For convenience following script does this
+           - [3.startArcGISserver.sh](3.startArcGISserver.sh)
         
       
        
