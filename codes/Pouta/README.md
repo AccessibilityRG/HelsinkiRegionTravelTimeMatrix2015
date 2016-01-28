@@ -1,6 +1,6 @@
 #Pouta Configurations
 
-Documentation regarding cPouta Linux Server configurations for ArcGIS Server. Documentation about [how to use/get started with Pouta in CSC can be found here](https://research.csc.fi/pouta-user-guide). 
+Here you can find the documentation regarding cPouta Linux Server configurations for ArcGIS Server. Documentation about [how to use/get started with Pouta in CSC can be found here](https://research.csc.fi/pouta-user-guide). 
 
 **NOTICE:** In the following documentation it is assumed that you have ArcGIS installation package extracted to folder:
    - **/home/MY_USERNAME/ArcGIS/ArcGISServer/**
