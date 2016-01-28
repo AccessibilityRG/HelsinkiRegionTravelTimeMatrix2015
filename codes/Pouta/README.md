@@ -102,10 +102,10 @@ Installation process is straightforward (read the manual).
 Some parts of the Travel Time/CO2 Matrix calculations were done using Geopandas module instead of arcpy since table processing/management is MUCH faster in pure Python than using ArcGIS.
 Because of this Anaconda2 was installed using conda/pip to the server (64 bit), plus following Python modules:
    
-   - GDAL
-   - Shapely
-   - pyproj 
-   - Fiona
+   - GDAL (1.11.2)
+   - pyproj (1.9.4) 
+   - Shapely (1.5.13) 
+   - fiona (1.5.1)
+   - descartes (1.0.1)
+   - geopandas (0.1.1)
   
-## <a name='how-to-run'></a>How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?
- 
