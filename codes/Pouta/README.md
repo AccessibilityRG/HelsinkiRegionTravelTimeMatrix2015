@@ -45,7 +45,9 @@ ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We 
             ulimit -Hn -Hu
             ulimit -Sn -Su
 
-**ArcGIS installation process** is straightforward (read the manual):
+### ArcGIS installation process 
+
+Installation process is straightforward (read the manual).
    
    - **Install the software** by running in /home/username/ArcGIS/ArcGISServer/ (or in a location where you have extracted your ArcGIS 10.3.1 for Server Linux installation package):
       
@@ -56,7 +58,7 @@ ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We 
        
             ./authorizeSoftware -f \_Server\_123456789.prvc  
    
-   - Change the IP-address in /etc/hosts from 127.0.0.1 to local IP address of the Pouta Instance:
+   - **Change the IP-address** in /etc/hosts from 127.0.0.1 to local IP address of the Pouta Instance:
    
      - You can check the local ip of the machine with following code:
      
@@ -64,6 +66,18 @@ ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We 
      
      - For convenience the following script can be used to automize this modification of the /etc/hosts file
         - [2.updateHosts.sh](2.updateHosts.sh)
+        
+   - **Start the ArcGIS server** by running:
+       - run in /arcgis/server/ :
+        
+            startserver.sh
+        
+        
+       - For convenience following script does it
+        
+      
+       
+         
         
  
 ## <a name='python-install'></a> Install Python stuff using Anaconda2 (64 bit)
