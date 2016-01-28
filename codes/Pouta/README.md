@@ -40,6 +40,7 @@ Other useful libraries:
          root hard nproc 25059
    
    - log out and log in for changes to take effect and verify (values should be now 65535 and 25059) by running:
+   
       - sudo su
       - ulimit -Hn -Hu
       - ulimit -Sn -Su
