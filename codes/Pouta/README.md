@@ -98,7 +98,18 @@ Installation process is straightforward (read the manual).
       
         
  
-## <a name='python-install'></a> Install Python stuff using Anaconda2 (64 bit)
+## <a name='python-install'></a> Install Python stuff using Anaconda2 
+
+Some parts of the Travel Time/CO2 Matrix calculations were done using Geopandas module instead of arcpy since table processing/management is MUCH faster in pure Python than using ArcGIS.
+Because of this Anaconda2 was installed using conda/pip to the server (64 bit), plus following Python modules:
+   
+   - GDAL
+   - Shapely
+   - pyproj 
+   - Fiona
+   
+ 
+
 
 ## <a name='how-to-run'></a> How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?
  
