@@ -6,7 +6,7 @@ Documentation regarding cPouta Linux Server configurations for ArcGIS Server.
    - **/home/MY_USERNAME/ArcGIS/ArcGISServer/**
    
 After ArcGIS installation it is assumed that arcgis has been installed to folder:
-   - **/home/*MY_USERNAME*/arcgis**
+   - **/home/MY_USERNAME/arcgis**
    
 If you are following these instructions change the paths accordingly to your own filepaths. 
     
