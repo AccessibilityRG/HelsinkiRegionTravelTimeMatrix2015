@@ -1,11 +1,21 @@
 # Codes
 
-Producing the Helsinki Region Travel CO2 Matrix 2015 included following __analysis / processing steps__:
+Producing the Helsinki Region Travel CO2 Matrix 2015 included several __analysis / processing steps__ that are represented here. 
+
+In these calculations CSC Taito computing cluster and CSC Pouta computing cluster was used to make the computing intensive work. 
+How the Taito and Pouta environments were set up can be read from here:
+   - __Taito__ - [configurations for MetropAccess-Reititin](Taito/)
+   - __Pouta__ - [configurations for MetropAccess-Digiroad tool](Pouta/)
+   
  
+## 1. Calculations by Walking
+
  1. Travel time / distance calculations by __Walking__ using [MetropAccess-Reititin](MetropAccess-Reititin/README.md)
      1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_kavely_allDay.json)
      2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_allday_kavely.lsf)
  
+## 2. Calculations by Public Tranportation 
+
  2. Travel time / distance calculations by __Public Transportation__ using [MetropAccess-Reititin](MetropAccess-Reititin/README.md)
      1. __Rush hour__ (08:00-09:00)
          1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_pt_rushhour.json)
@@ -14,6 +24,9 @@ Producing the Helsinki Region Travel CO2 Matrix 2015 included following __analys
          1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_pt_midday.json)
          2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_midday_joukkoliikenne.lsf)
  
+## 3. Calculations by Private Car
+
+
  3. Travel time / distance calculations by __Private Car__ using [MetropAccess-Digiroad tool](MetropAccess-Digiroad/README.md) that was slightly modified for CSC cPouta environment.
    Car calculations were done using ArcGIS for Server 10.2 and specific Python modules (i.e. [geopandas](http://geopandas.org/)). 
    
