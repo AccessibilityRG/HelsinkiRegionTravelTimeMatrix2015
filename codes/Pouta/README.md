@@ -1,7 +1,15 @@
 # Pouta Configurations
 
 Documentation regarding cPouta Linux Server configurations for ArcGIS Server.
- 
+
+**NOTICE:** In the following documentation it is assumed that you have ArcGIS installation package extacted to folder:
+   - **/home/MY_USERNAME/ArcGIS/ArcGISServer/**
+   
+After ArcGIS installation it is assumed that arcgis has been installed to folder:
+   - **/home/*MY_USERNAME*/arcgis**
+   
+If you are following these instructions change the paths accordingly to your own filepaths. 
+    
 __Contents:__
 
  - [Install ArcGIS 10.3.1 for Server Linux](#arcgis-install)
