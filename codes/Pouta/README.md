@@ -62,7 +62,7 @@ Installation process is straightforward (read the manual).
    
      - You can check the local ip of the machine with following code:
      
-        ifconfig eth0 | grep 'inet addr' | cut -d: -f2 | cut -d ' ' -f1
+            ifconfig eth0 | grep 'inet addr' | cut -d: -f2 | cut -d ' ' -f1
      
      - For convenience the following script can be used to automize this modification of the /etc/hosts file
         - [2.updateHosts.sh](2.updateHosts.sh)
