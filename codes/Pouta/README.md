@@ -12,7 +12,7 @@ __Contents:__
 
 ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We got the installation package from CSC. 
 
-Install dependencies ([more info here](http://server.arcgis.com/en/server/latest/install/linux/arcgis-for-server-system-requirements.htm):
+**Install dependencies** ([more info here](http://server.arcgis.com/en/server/latest/install/linux/arcgis-for-server-system-requirements.htm):
 
   - fontconfig ==> sudo yum install fontconfig
   - freetype ==> sudo yum install freetype
@@ -24,9 +24,9 @@ Install dependencies ([more info here](http://server.arcgis.com/en/server/latest
   - mesa-libGLU ==> sudo yum install mesa-libGLU 
   - Xvfb ==> sudo yum install Xvfb
   
-Other useful libraries:
+**Other useful libraries:**
 
-  - nano: sudo yum install nano
+  - nano ==> sudo yum install nano
   
 **Configure file handle limits:**
 
@@ -39,11 +39,11 @@ Other useful libraries:
              root soft nproc 25059
              root hard nproc 25059
    
-   - log out and log in for changes to take effect and verify (values should be now 65535 and 25059) by running:
+   - log out and log in for changes to take effect and verify (values should be now 65535 and 25059) by running following lines one by one:
    
-      - sudo su
-      - ulimit -Hn -Hu
-      - ulimit -Sn -Su
+        sudo su
+        ulimit -Hn -Hu
+        ulimit -Sn -Su
 
 ArcGIS installation process is straightforward (read the manual):
    
