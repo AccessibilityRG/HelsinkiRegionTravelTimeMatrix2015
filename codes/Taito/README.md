@@ -10,3 +10,11 @@ computing cores as possible. We used [Taito Array Jobs](https://research.csc.fi/
 ## Installing MetropAccess-Reititin + dependencies to Taito
 
 MetropAccess-Reititin is written in Javascript and running it locally requires node.js to be installed.  
+
+Thus first thing to do is to install node.js to Taito:
+
+   - Download node.js:
+   
+          sudo wget  
+            
+   - Install node: 
