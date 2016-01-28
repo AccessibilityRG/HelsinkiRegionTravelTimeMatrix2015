@@ -17,4 +17,5 @@ Thus first thing to do is to install node.js to Taito:
    
           sudo wget  
             
-   - Install node: 
+   - Install node.js: 
+   
