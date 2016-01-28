@@ -27,8 +27,7 @@ Install dependencies ([more info here](http://server.arcgis.com/en/server/latest
 Other useful libraries:
 
   - nano: sudo yum install nano
-  - add following lines 
-
+  
 Configure file handle limits:
 
   - sudo nano /etc/security/limits.conf
