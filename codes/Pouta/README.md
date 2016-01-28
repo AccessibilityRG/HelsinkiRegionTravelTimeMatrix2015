@@ -47,12 +47,12 @@ ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We 
 
 **ArcGIS installation process** is straightforward (read the manual):
    
-   - Install the software by running in /home/username/ArcGIS/ArcGISServer/ (or in a location where you have extracted your ArcGIS 10.3.1 for Server Linux installation package):
+   - **Install the software** by running in /home/username/ArcGIS/ArcGISServer/ (or in a location where you have extracted your ArcGIS 10.3.1 for Server Linux installation package):
       
             sudo ./Setup
    
-   - Authenticate the ArcGIS installation with prvc-file (\*.prvc) by running *authorizeSoftware* tool and passing the prvc file into it:
-       - run in __/home/*username*/arcgis/tools/authorizeSoftware__ (example, not real auth_key):
+   - **Authenticate the ArcGIS installation** with prvc-file (\*.prvc) by running *authorizeSoftware* tool and passing the prvc file into it:
+       - run in ___/home/*username*/arcgis/tools/authorizeSoftware___ (example, not real auth_key):
        
             ./authorizeSoftware -f \_Server\_123456789.prvc  
    
