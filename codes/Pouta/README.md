@@ -12,10 +12,14 @@ If you are following these instructions change the paths accordingly to your own
     
 ## Contents:
 
- - [Install ArcGIS 10.3.1 for Server Linux and dependencies](#arcgis-install)
+ - [Install ArcGIS 10.3.1 for Server Linux + dependencies](#arcgis-install)
      - [Dependencies](#dependencies)
      - [Configure file handle limits](#handle-limits)
      - [Install ArcGIS](#install-software)
+     - [Authenticate](#authenticate)
+     - [Change the IP-address in hosts](#change-IP)
+     - [Start the ArcGIS Server](#start-server)
+     - [Run ArcGIS!](#run-arcgis)
  - [Install Python stuff using Anaconda2 (64 bit)](#python-install)
  - [How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?](#how-to-run)
  
@@ -64,12 +68,12 @@ Installation process is straightforward (read the manual).
       
             sudo ./Setup
    
-   - **Authenticate the ArcGIS installation** with prvc-file (\*.prvc) by running *authorizeSoftware* tool and passing the prvc file into it:
+   - **<a name='authenticate'></a> Authenticate the ArcGIS installation** with prvc-file (\*.prvc) by running *authorizeSoftware* tool and passing the prvc file into it:
        - run in ___/home/*MY_USERNAME*/arcgis/tools/authorizeSoftware___ (example, not real auth_key):
        
             ./authorizeSoftware -f \_Server\_123456789.prvc  
    
-   - **Change the IP-address** in /etc/hosts from 127.0.0.1 to local IP address of the Pouta Instance:
+   - **<a name='change-IP'></a> Change the IP-address** in /etc/hosts from 127.0.0.1 to local IP address of the Pouta Instance:
    
      - You can check the local ip of the machine with following code:
      
@@ -78,7 +82,7 @@ Installation process is straightforward (read the manual).
      - For convenience the following script can be used to automize this modification of the /etc/hosts file
         - [2.updateHosts.sh](2.updateHosts.sh)
         
-   - **Start the ArcGIS server** by running:
+   - **<a name='start-server'></a> Start the ArcGIS server** by running:
        - run in /arcgis/server/ :
         
             startserver.sh
@@ -87,13 +91,11 @@ Installation process is straightforward (read the manual).
            - [3.startArcGISserver.sh](3.startArcGISserver.sh)
         
         
-   - **Start using ArcGIS**
-       - After these procedures ArcGIS python shell is ready to use and you can run for example a python script called _hello_world.py_ in ArcGIS with command:
+   - **<a name='run-arcgis'></a> Start using ArcGIS**
+       - After these procedures ArcGIS python shell is ready to use and you can run for example a python script called _[hello_world.py](hello_world.py)_ in ArcGIS with command:
                
                /home/MY_USERNAME/arcgis/server/tools/python /home/MY_USERNAME/MyScripts/hello_world.py
       
-       
-         
         
  
 ## <a name='python-install'></a> Install Python stuff using Anaconda2 (64 bit)
