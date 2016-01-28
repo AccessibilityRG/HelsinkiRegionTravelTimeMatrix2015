@@ -72,10 +72,14 @@ Installation process is straightforward (read the manual).
         
             startserver.sh
         
-        
        - For convenience following script does this
            - [3.startArcGISserver.sh](3.startArcGISserver.sh)
         
+        
+   - **Start using ArcGIS**
+       - After these procedures ArcGIS python shell is ready to use and you can run for example a python script called _hello_world.py_ in ArcGIS with command:
+               
+               /home/username/arcgis/server/tools/python /home/usernames/MyScripts/hello_world.py
       
        
          
