@@ -41,9 +41,9 @@ ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We 
    
    - log out and log in for changes to take effect and verify (values should be now 65535 and 25059) by running following lines one by one:
    
-         sudo su
-         ulimit -Hn -Hu
-         ulimit -Sn -Su
+            sudo su
+            ulimit -Hn -Hu
+            ulimit -Sn -Su
 
 ArcGIS installation process is straightforward (read the manual):
    
