@@ -28,9 +28,10 @@ Other useful libraries:
 
   - nano: sudo yum install nano
   
-Configure file handle limits:
+**Configure file handle limits:**
 
-  - sudo nano /etc/security/limits.conf
+  - sudo nano /etc/security/limits.conf:
+  
      - add following lines to the end of the file:
    
          root soft nofile 65535
