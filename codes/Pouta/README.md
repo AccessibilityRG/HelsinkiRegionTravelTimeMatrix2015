@@ -1,6 +1,6 @@
 #Pouta Configurations
 
-Documentation regarding cPouta Linux Server configurations for ArcGIS Server.
+Documentation regarding cPouta Linux Server configurations for ArcGIS Server. Documentation about [how to use/get started with Pouta in CSC can be found here](https://research.csc.fi/pouta-user-guide). 
 
 **NOTICE:** In the following documentation it is assumed that you have ArcGIS installation package extracted to folder:
    - **/home/MY_USERNAME/ArcGIS/ArcGISServer/**
@@ -107,7 +107,6 @@ Because of this Anaconda2 was installed using conda/pip to the server (64 bit), 
    - Shapely
    - pyproj 
    - Fiona
-   
-
+  
 ## <a name='how-to-run'></a>How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?
  
