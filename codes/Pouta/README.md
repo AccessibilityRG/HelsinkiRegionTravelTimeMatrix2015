@@ -33,13 +33,10 @@ Configure file handle limits:
   - sudo nano /etc/security/limits.conf
      - add following lines to the end of the file:
    
-        root soft nofile 65535
-        
-        root hard nofile 65535
-        
-        root soft nproc 25059
-        
-        root hard nproc 25059
+         root soft nofile 65535
+         root hard nofile 65535
+         root soft nproc 25059
+         root hard nproc 25059
    
    - log out and log in for changes to take effect and verify (values should be now 65535 and 25059) by running:
       - sudo su
