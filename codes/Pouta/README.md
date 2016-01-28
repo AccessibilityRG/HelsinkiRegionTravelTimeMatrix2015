@@ -12,8 +12,10 @@ If you are following these instructions change the paths accordingly to your own
     
 ## Contents:
 
- - [Install ArcGIS 10.3.1 for Server Linux](#arcgis-install)
+ - [Install ArcGIS 10.3.1 for Server Linux and dependencies](#arcgis-install)
      - [Dependencies](#dependencies)
+     - [Configure file handle limits](#handle-limits)
+     - [Install ArcGIS](#install-software)
  - [Install Python stuff using Anaconda2 (64 bit)](#python-install)
  - [How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?](#how-to-run)
  
@@ -37,7 +39,7 @@ ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We 
 
   - nano ==> sudo yum install nano
   
-**Configure file handle limits:**
+**<a name='handle-limits'></a> Configure file handle limits:**
 
   - sudo nano /etc/security/limits.conf:
   
@@ -54,7 +56,7 @@ ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We 
             ulimit -Hn -Hu
             ulimit -Sn -Su
 
-### ArcGIS installation process 
+### <a name='install-software'></a> ArcGIS installation process 
 
 Installation process is straightforward (read the manual).
    
