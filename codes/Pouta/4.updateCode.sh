@@ -1,1 +1,1 @@
-sudo nano /home/cloud-user/Codes/TTM15_runModular.py
+sudo nano /home/MY_USERNAME/Codes/TTM15_runModular.py

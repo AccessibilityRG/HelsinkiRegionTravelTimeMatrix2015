@@ -1,1 +1,1 @@
-/home/cloud-user/arcgis/server/startserver.sh
+/home/MY_USERNAME/arcgis/server/startserver.sh

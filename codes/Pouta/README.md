@@ -49,12 +49,12 @@ ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We 
 
 Installation process is straightforward (read the manual).
    
-   - **Install the software** by running in /home/username/ArcGIS/ArcGISServer/ (or in a location where you have extracted your ArcGIS 10.3.1 for Server Linux installation package):
+   - **Install the software** by running in /home/MY_USERNAME/ArcGIS/ArcGISServer/ (or in a location where you have extracted your ArcGIS 10.3.1 for Server Linux installation package):
       
             sudo ./Setup
    
    - **Authenticate the ArcGIS installation** with prvc-file (\*.prvc) by running *authorizeSoftware* tool and passing the prvc file into it:
-       - run in ___/home/*username*/arcgis/tools/authorizeSoftware___ (example, not real auth_key):
+       - run in ___/home/*MY_USERNAME*/arcgis/tools/authorizeSoftware___ (example, not real auth_key):
        
             ./authorizeSoftware -f \_Server\_123456789.prvc  
    
@@ -79,7 +79,7 @@ Installation process is straightforward (read the manual).
    - **Start using ArcGIS**
        - After these procedures ArcGIS python shell is ready to use and you can run for example a python script called _hello_world.py_ in ArcGIS with command:
                
-               /home/username/arcgis/server/tools/python /home/usernames/MyScripts/hello_world.py
+               /home/MY_USERNAME/arcgis/server/tools/python /home/MY_USERNAME/MyScripts/hello_world.py
       
        
          
