@@ -21,8 +21,7 @@ If you are following these instructions change the paths accordingly to your own
      - [Start the ArcGIS Server](#start-server)
      - [Run ArcGIS!](#run-arcgis)
  - [Install Python stuff using Anaconda2 (64 bit)](#python-install)
- - [How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?](#how-to-run)
- 
+
 ##<a name='arcgis-install'></a>Install ArcGIS Server for Linux
 
 ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We got the installation package from CSC. 
