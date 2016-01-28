@@ -13,6 +13,7 @@ If you are following these instructions change the paths accordingly to your own
 __Contents:__
 
  - [Install ArcGIS 10.3.1 for Server Linux](#arcgis-install)
+     - [Dependencies](#dependencies)
  - [Install Python stuff using Anaconda2 (64 bit)](#python-install)
  - [How to run ArcGIS (arcpy) and Python (geopandas) in the same process chain?](#how-to-run)
  
@@ -20,7 +21,7 @@ __Contents:__
 
 ArcGIS for Server 10.3.1 was installed for cPouta CentOS (6.7) Linux server. We got the installation package from CSC. 
 
-**Install dependencies** ([more info here](http://server.arcgis.com/en/server/latest/install/linux/arcgis-for-server-system-requirements.htm):
+**<a name='dependencies'></a> Install dependencies** ([more info here](http://server.arcgis.com/en/server/latest/install/linux/arcgis-for-server-system-requirements.htm):
 
   - fontconfig ==> sudo yum install fontconfig
   - freetype ==> sudo yum install freetype
