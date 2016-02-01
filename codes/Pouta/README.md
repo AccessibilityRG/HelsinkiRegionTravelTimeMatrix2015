@@ -114,6 +114,10 @@ Because of this Anaconda2 was installed using conda/pip to the server (64 bit), 
 Running the ArcGIS calculations in [CSC cPouta](https://pouta.csc.fi/) computing cluster were done using 22 Linux CentOS instances (flavor = small) 
 where each instance had 4 VCPUs and 15 360 MB of RAM. First, an image with all the necessary installations (ArcGIS & Python stuff) and data was created. 
 That image was then cloned to 22 instances that were used to do the calculations. Running all calculations took approximately 1 day with those 22 instances.
+
+Our calculations was divided on 293 individual subtasks where each task included MetropAccess-Digiroad calculations from 50 origin locations that are within a single *origin-file.shp* Shapefile
+to 14 645 destination locations that are within *destinationFile.shp*.
+All the private car origin and destination files that were used in calculations are [here](../../data/Car/). 
      
 **Required (5) steps for doing the calculations in Pouta (repeated in every instance)**:
    
@@ -122,5 +126,11 @@ That image was then cloned to 22 instances that were used to do the calculations
    3. [Start ArcGIS Server](3.startArcGISserver.sh)
    4. [Update the Python code - set the job range](4.updateCode.sh) (i.e. origin file numbers that will be run)
    5. [Run ArcGIS and do the calculations](5.runArc.sh)
+   
+**The actual Python codes**:
+
+   - [Control file of the calculations](Python-Codes/TTM15_runModular.py)
+   - [ArcGIS related calculations](Python-Codes/TTM15_run_ArcGIS.py) ==> Change the impedance according to time (Ruuhka_aa / Keskpva_aa = Rush-hour / Midday)
+   - [Geopandas related calculations](Python-Codes/TTM15_run_Geopandas.py)
    
 The result Shapefiles will be located in /mnt/TTM_Results.  
