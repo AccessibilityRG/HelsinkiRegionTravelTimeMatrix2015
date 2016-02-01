@@ -1,3 +1,4 @@
+#!/bin/bash
 # Get local IP
 LocalIP="$(ifconfig eth0 | grep 'inet addr' | cut -d: -f2 | cut -d ' ' -f1)" 
 

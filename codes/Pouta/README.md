@@ -96,7 +96,6 @@ Installation process is straightforward (read the manual).
                
                /home/MY_USERNAME/arcgis/server/tools/python /home/MY_USERNAME/MyScripts/hello_world.py
       
-        
  
 ## <a name='python-install'></a>Install Python stuff using Anaconda2 
 
@@ -112,3 +111,16 @@ Because of this Anaconda2 was installed using conda/pip to the server (64 bit), 
   
 ##<a name='pouta-calculations'></a>How Pouta was used to calculate private car travel times/distances?
 
+Running the ArcGIS calculations in [CSC cPouta](https://pouta.csc.fi/) computing cluster were done using 22 Linux CentOS instances (flavor = small) 
+where each instance had 4 VCPUs and 15 360 MB of RAM. First, an image with all the necessary installations (ArcGIS & Python stuff) and data was created. 
+That image was then cloned to 22 instances that were used to do the calculations. Running all calculations took approximately 1 day with those 22 instances.
+     
+**Required (5) steps for doing the calculations in Pouta (repeated in every instance)**:
+   
+   1. [Create an output folder to separate disk (/mnt) and set the permits](1.setPermits.sh)
+   2. [Update the hosts to /etc/hosts](2.updateHosts.sh)
+   3. [Start ArcGIS Server](3.startArcGISserver.sh)
+   4. [Update the Python code - set the job range](4.updateCode.sh) (i.e. origin file numbers that will be run)
+   5. [Run ArcGIS and do the calculations](5.runArc.sh)
+   
+The result Shapefiles will be located in /mnt/TTM_Results.  
