@@ -45,5 +45,5 @@ Documentation **how to set up the Taito and Pouta environments** and **instructi
 The analyses and processing phases support multiprocessing using Python [multiprocessing](https://docs.python.org/3.4/library/multiprocessing.html) module 
 that makes possible to do processing in parallel utilizing multiple processors on a given machine. ==> Makes possible to do things faster. 
  
-## Structure of the code
+## 4. Combining Private Car & PT results
 
