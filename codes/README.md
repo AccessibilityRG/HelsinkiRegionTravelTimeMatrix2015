@@ -32,13 +32,16 @@ Documentation **how to set up the Taito and Pouta environments** and **instructi
    Read more detailed instructions how to run the car calculations in Pouta from **[here](Pouta/README.md#pouta-calculations)**  
    
      1. __Rush hour__ (07:00-09:00 & 15:00-17:00)
-         1. Calculation script using ArcGIS for Server
-         2. 
+         1. [ArcGIS calculation script](Pouta/Python-Codes/TTM15_run_ArcGIS_rushhour.py)
+         2. [Geopandas calculation script](Pouta/Python-Codes/TTM15_run_Geopandas.py)
+         3. [Control file](Pouta/Python-Codes/TTM15_runModular.py)
+         
      1. __Midday__ (09:00-15:00)
-         1. 
-         2. 
- 
- 
+         1. [ArcGIS calculation script](Pouta/Python-Codes/TTM15_run_ArcGIS_midday.py)
+         2. [Geopandas calculation script](Pouta/Python-Codes/TTM15_run_Geopandas.py)
+         3. [Control file](Pouta/Python-Codes/TTM15_runModular.py)
+          
+  
 The analyses and processing phases support multiprocessing using Python [multiprocessing](https://docs.python.org/3.4/library/multiprocessing.html) module 
 that makes possible to do processing in parallel utilizing multiple processors on a given machine. ==> Makes possible to do things faster. 
  
