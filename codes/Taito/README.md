@@ -35,7 +35,7 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
                       
    - Install node.js:
    
-      - Swap from Intel to GCC compiler ( *this step has to be done every time you start using MetropAccess-Reititin in Taito* ):
+      - <a name='swap'></a>Swap from Intel to GCC compiler ( *this step has to be done every time you start using MetropAccess-Reititin in Taito* ):
             
             module swap intel gcc
             
@@ -46,7 +46,7 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
            make
            make install
            
-   - Export node path to system path ( *this step has to be done every time you start using MetropAccess-Reititin in Taito* )
+   - <a name='node-path'></a>Export node path to system path ( *this step has to be done every time you start using MetropAccess-Reititin in Taito* )
    
           export PATH=${PATH}:${USERAPPL}/nodejs/node-v4.1.2/bin
           
@@ -77,10 +77,40 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
 
 ## Creating an array job for Taito using Reititin
 
-Running MetropAccess-Reititin in parallel in Taito can be done easily using [Taito Array Jobs](https://research.csc.fi/taito-array-jobs).
-Using array jobs it is possible to divide the calculations to multiple separate jobs running on a different CPU.  
+Running MetropAccess-Reititin in parallel in Taito can be done easily using Taito **Array Jobs**.
+Using array jobs it is possible to divide the calculations to multiple separate jobs running on a different CPU. 
+A guide how to create an array job in Taito can be found from [here](https://research.csc.fi/taito-array-jobs).   
 
-Our calculations was divided on 293 individual jobs where each job included MetropAccess-Reititin route optimizations from 50 origin locations
-([an example of a single origin file](../../data/PT/Subsets/1_Walk_Matrix2015_Origs_WGS84.txt)) to 14 645 destination locations ([see the destination file](../../data/PT/destPoints.txt)).
-All of the public transportation origin and destination files that were used in calculations are [here](../../data/PT/)
+Our calculations was divided on 293 individual subtasks where each task included MetropAccess-Reititin route optimizations from 50 origin locations that are within a single *origin-file.txt*
+([an example of a origin file](../../data/PT/Subsets/1_Matrix2015_Origs_WGS84.txt)) to 14 645 destination locations ([see the destination file](../../data/PT/destPoints.txt)).
+All public transportation origin and destination files that were used in calculations are [here](../../data/PT/). 
+
+Necessary steps for creating an Array Job (\*.lsf -file) for MetropAccess-Reititin:
+
+  1. Define the job range and other Taito related parameters (starting with #SBATCH keyword)
+  2. [Swap from Intel compiler to GCC](#swap)
+  3. [Export node path to system path](#node-path)
+  4. Define MetropAccess-Reititin specific parameters:
+     - Kalkati-path
+     - Path to MetropAccess-Reititin configuration file
+     - Path to folder where origin and destination files are located
+     - Name for the result file
+     
+Here are the array job files that were used when calculating the Helsinki Region Travel Time/CO2 Matrices (2015):
+
+  - [Walking](reititin_massaAjo_2015_allday_kavely.lsf)
+  - Public Transport:
+      - [Rush-hour](reititin_massaAjo_2015_rushhour_joukkoliikenne.lsf)
+      - [Midday](reititin_massaAjo_2015_midday_joukkoliikenne.lsf)
+  
+    
+Running the calculations in Taito is done with command (example by walking):
+
+         sbatch reititin_massaAjo_2015_allday_kavely.lsf
+      
+
+You can check the progress of the tasks with command:
+
+
+        squeue -U $USER
 

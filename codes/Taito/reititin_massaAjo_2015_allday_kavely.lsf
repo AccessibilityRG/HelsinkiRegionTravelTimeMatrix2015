@@ -59,7 +59,7 @@ KALKATI=$HOME/Data/Kalkati/kalkati_2015-08-19
 cd $HOME/appl_taito/reititin/build
 
 # Run the tool
-./route.sh $OD/"$SLURM_ARRAY_TASK_ID"_Walk_Matrix2015_Origs_WGS84.txt $OD/destPoints_WGS84.txt --out-avg=$RESULTS/"$SLURM_ARRAY_TASK_ID"_$OUTNAME.txt --base-path=$KALKATI --conf=$CONF
+./route.sh $OD/"$SLURM_ARRAY_TASK_ID"_Matrix2015_Origs_WGS84.txt $OD/destPoints_WGS84.txt --out-avg=$RESULTS/"$SLURM_ARRAY_TASK_ID"_$OUTNAME.txt --base-path=$KALKATI --conf=$CONF
 
 
 # This script will print some usage statistics to the
