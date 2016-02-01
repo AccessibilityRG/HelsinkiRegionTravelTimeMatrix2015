@@ -34,8 +34,8 @@ Documentation **how to set up the Taito and Pouta environments* and **instructio
          1. Calculation script using ArcGIS for Server
          2. 
      1. __Midday__ (09:00-15:00)
-         1. [Configuration/setup file that was used in calculations](Conf/confMassaAjo2015_pt_midday.json)
-         2. [Taito array job file that was used to run MetropAccess-Reititin in parallel](Taito/reititin_massaAjo_2015_midday_joukkoliikenne.lsf)
+         1. 
+         2. 
  
  
 The analyses and processing phases support multiprocessing using Python [multiprocessing](https://docs.python.org/3.4/library/multiprocessing.html) module 
