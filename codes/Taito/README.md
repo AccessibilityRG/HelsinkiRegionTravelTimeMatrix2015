@@ -9,7 +9,9 @@ computing cores as possible. We use [Taito Array Jobs](https://research.csc.fi/t
     - [Nodejs](#nodejs)
     - [MetropAccess-Reititin](#reititin)
     
- - [Creating an array job for Taito using Reititin](#)
+ - [Creating an array job for Taito using Reititin](#array-job-reititin)
+    - [Necessary steps](#necessary-steps)
+    - [Array job files that were used for Helsinki Region Travel Time/Co2 Matrix 2015](#array-jobs)
 
 ##<a name='reititin-dep'></a>Installing MetropAccess-Reititin + dependencies to Taito
 
@@ -75,7 +77,7 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
          ./route.sh
       
 
-## Creating an array job for Taito using Reititin
+## <a name='array-job-reititin'></a>Creating an array job for Taito using Reititin
 
 Running MetropAccess-Reititin in parallel in Taito can be done easily using Taito **Array Jobs**.
 Using array jobs it is possible to divide the calculations to multiple separate jobs running on a different CPU. 
@@ -85,7 +87,7 @@ Our calculations was divided on 293 individual subtasks where each task included
 ([an example of a origin file](../../data/PT/Subsets/1_Matrix2015_Origs_WGS84.txt)) to 14 645 destination locations ([see the destination file](../../data/PT/destPoints.txt)).
 All public transportation origin and destination files that were used in calculations are [here](../../data/PT/). 
 
-Necessary steps for creating an Array Job (\*.lsf -file) for MetropAccess-Reititin:
+**<a name='necessary-steps'></a>Necessary steps for creating an Array Job (\*.lsf -file) for MetropAccess-Reititin**:
 
   1. Define the job range and other Taito related parameters (starting with #SBATCH keyword)
   2. [Swap from Intel compiler to GCC](#swap)
@@ -96,7 +98,7 @@ Necessary steps for creating an Array Job (\*.lsf -file) for MetropAccess-Reitit
      - Path to folder where origin and destination files are located
      - Name for the result file
      
-Here are the array job files that were used when calculating the Helsinki Region Travel Time/CO2 Matrices (2015):
+<a name='array-jobs'></a>**Here are the array job files that were used when calculating the Helsinki Region Travel Time/CO2 Matrices (2015)**:
 
   - [Walking](reititin_massaAjo_2015_allday_kavely.lsf)
   - Public Transport:
