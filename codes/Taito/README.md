@@ -21,60 +21,60 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
 
    - Create folders for mcl and nodejs to appl_taito:
    
-         mkdir -p $USERAPPL/{mcl,nodejs}
+         $ mkdir -p $USERAPPL/{mcl,nodejs}
          
    - Download mcl and extract it ( **might not be needed** ):
           
-          cd $USERAPPL/mcl
-          wget http://www.micans.org/mcl/src/mcl-latest.tar.gz
-          tar xf mcl-latest.tar.gz
+          $ cd $USERAPPL/mcl
+          $ wget http://www.micans.org/mcl/src/mcl-latest.tar.gz
+          $ tar xf mcl-latest.tar.gz
    
    - Download the latest version of node.js (source files), extract it to 4.1.2 (here to *4.1.2* ==> Change accordingly to what is the version you use):
           
-          cd $USERAPPL/nodejs
-          wget https://nodejs.org/download/release/v4.1.2/node-v4.1.2.tar.gz
-          tar xf node-v4.1.2.tar.gz
+          $ cd $USERAPPL/nodejs
+          $ wget https://nodejs.org/download/release/v4.1.2/node-v4.1.2.tar.gz
+          $ tar xf node-v4.1.2.tar.gz
                       
    - Install node.js:
    
       - <a name='swap'></a>Swap from Intel to GCC compiler ( *this step has to be done every time you start using MetropAccess-Reititin in Taito* ):
             
-            module swap intel gcc
+          $  module swap intel gcc
             
       - Configure and install nodejs (we use version 4.1.2 here --> there have been some building problems with certain nodejs versions)
       
-           cd $USERAPPL/nodejs/node-v4.1.2
-           ./configure --prefix=$USERAPPL/nodejs/node-v4.1.2
-           make
-           make install
+          $ cd $USERAPPL/nodejs/node-v4.1.2
+          $ ./configure --prefix=$USERAPPL/nodejs/node-v4.1.2
+          $ make
+          $ make install
            
    - <a name='node-path'></a>Export node path to system path ( *this step has to be done every time you start using MetropAccess-Reititin in Taito* )
    
-          export PATH=${PATH}:${USERAPPL}/nodejs/node-v4.1.2/bin
+         $ export PATH=${PATH}:${USERAPPL}/nodejs/node-v4.1.2/bin
           
    - Check that node works (should open a node shell ==> exit by pressing **CNTRL + C** two times)
      
-          node
+         $ node
        
 <a name='reititin'></a> **Install MetropAccess-Reititin**:
 
   - Make directory for MetropAccess-Reititin:
         
-          mkdir $USERAPPL/reititin
+         $ mkdir $USERAPPL/reititin
        
   - Download the Linux version of the MetropAccess-Reititin:
   
-         cd $USERAPPL/reititin
-         wget http://www.helsinki.fi/science/accessibility/tools/MetropAccess-Reititin/reititin-linux.tar.gz
+        $ cd $USERAPPL/reititin
+        $ wget http://www.helsinki.fi/science/accessibility/tools/MetropAccess-Reititin/reititin-linux.tar.gz
          
   - Extract the contents
          
-         tar xf reititin-linux.tar.gz
+        $ tar xf reititin-linux.tar.gz
          
   - Check that reititin works in Taito (should start making a test routing) Todo: PÄIVITÄ REITITIN-LINUX PAKETTIIN ROUTE.SH TIEDOSTO OIKEAKSI!!!
   
-         cd $USERAPPL/reititin/reititin/build
-         ./route.sh
+        $ cd $USERAPPL/reititin/reititin/build
+        $ ./route.sh
       
 
 ## <a name='array-job-reititin'></a>Creating an array job for Taito using Reititin
@@ -108,11 +108,11 @@ All public transportation origin and destination files that were used in calcula
     
 Running the calculations in Taito is done with command (example by walking):
 
-         sbatch reititin_massaAjo_2015_allday_kavely.lsf
+         $ sbatch reititin_massaAjo_2015_allday_kavely.lsf
       
 
 You can check the progress of the tasks with command:
 
 
-        squeue -U $USER
+         $ squeue -U $USER
 
