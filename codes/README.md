@@ -29,6 +29,7 @@ Documentation **how to set up the Taito and Pouta environments** and **instructi
 
  3. Travel time / distance calculations by __Private Car__ using [MetropAccess-Digiroad tool](MetropAccess-Digiroad/README.md) that was slightly modified for CSC cPouta environment.
    Car calculations were done using ArcGIS for Server 10.2 and specific Python modules (i.e. [geopandas](http://geopandas.org/)). 
+   Read more detailed instructions how to run the car calculations in Pouta from **[here](Pouta/README.md#pouta-calculations)**  
    
      1. __Rush hour__ (07:00-09:00 & 15:00-17:00)
          1. Calculation script using ArcGIS for Server
