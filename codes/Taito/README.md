@@ -31,7 +31,7 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
                       
    - Install node.js:
    
-      - <a name='swap'></a>Swap from Intel to GCC compiler ( *this step has to be done every time you start using MetropAccess-Reititin in Taito* ):
+      - <a name='swap'></a>Swap from Intel to GCC compiler ( *this step is needed every time you use MetropAccess-Reititin in Taito* ):
             
              $ module swap intel gcc
             
