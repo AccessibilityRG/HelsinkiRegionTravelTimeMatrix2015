@@ -2,11 +2,13 @@
 
 Producing the Helsinki Region Travel CO2 Matrix 2015 included several __analysis / processing steps__ that are represented here. 
 
-In these calculations CSC Taito and cPouta computing clusters were used to make the computing intensive work. 
+In these calculations CSC Taito and cPouta computing clusters were used to make the computing intensive work (steps 1-3). 
 Documentation **how to set up the Taito and Pouta environments** and **instructions how to run the calculations** can be read from here:
+
    - __Taito__ - [configurations & instructions for MetropAccess-Reititin](Taito/)
    - __Pouta__ - [configurations & instructions for MetropAccess-Digiroad tool](Pouta/)
    
+Steps 4-5 were done on a local computer with 16GB of RAM, using Python and PostgSQL 9.4 / PostGIS 2.1. 
 
 ## 1. Calculations by Walking
 
@@ -45,5 +47,26 @@ Documentation **how to set up the Taito and Pouta environments** and **instructi
 The analyses and processing phases support multiprocessing using Python [multiprocessing](https://docs.python.org/3.4/library/multiprocessing.html) module 
 that makes possible to do processing in parallel utilizing multiple processors on a given machine. ==> Makes possible to do things faster. 
  
-## 4. Combining Private Car & PT results
+## 4. Combining Private Car and PT results + creating PostGIS matrix 
+
+Steps 1-3 produces 5 separate datasets (1 by walking, 2 by PT and 2 by car) with common data structure, i.e. all the result files are based on the same set of origin 
+location subsets (293 files) and same destination locations (a single file). 
+
+Next, the result files are combined together and the first version of the matrix is generated into a PostGIS table. PostGIS is used because it is fast / can be used in web development, and 
+it is the fastest way to produce the final text file matrix (where data is organized and distributed based on individual 'to_id' locations). 
+
+Required steps:
+
+  1. [Create a PostGIS table for Helsinki Region Travel Time Matrix](Python-PostGIS/Matriisi2015_PostGIS_CreateTable.py)
+  2. [Parse results - combine different travel modes / times and push them into PostGIS table](Python-PostGIS/Matriisi2015_Compiler_accessibility_PostGIS.py) 
+  
+## 5. Create Helsinki Region Travel Time Matrix 2015 (text file version)
+
+The final step is to create the travel time matrix 2015 fetching the data from PostGIS and saving the results into text files. 
+
+Required steps:
+
+  1. [Create database indices for faster look ups](Python-PostGIS/Matriisi2015_PostGIS_CreatePrimaryKey_and_Indices.py)
+  2. [Create the final Helsinki Region Travel Time Matrix 2015 (text file version)](Python-PostGIS/Matrix2015_Parse_TextMatrix_from_PostGIS.py)
+ 
 
