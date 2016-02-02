@@ -2,7 +2,7 @@
 
 Producing the Helsinki Region Travel CO2 Matrix 2015 included several __analysis / processing steps__ that are represented here. 
 
-In these calculations CSC Taito and cPouta computing clusters were used to make the computing intensive work (steps 1-3). 
+In the calculations CSC Taito and cPouta computing clusters were used to make the computing intensive work (steps 1-3). 
 Documentation **how to set up the Taito and Pouta environments** and **instructions how to run the calculations** can be read from here:
 
    - __Taito__ - [configurations & instructions for MetropAccess-Reititin](Taito/)
