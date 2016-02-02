@@ -103,7 +103,6 @@ pt_m_dir = r"E:\Matriisiajot2015\RESULTS\MassaAjot2015_PT_klo12"
 walk_dir = r"E:\Matriisiajot2015\RESULTS\MassaAjot2015_Kavely_klo12"
 car_r_dir = r"E:\Matriisiajot2015\RESULTS\MassaAjot2015_Autoilu_Ruuhka"
 car_m_dir = r"E:\Matriisiajot2015\RESULTS\MassaAjot2015_Autoilu_Midday"
-outDir = r"C:\HY-Data\HENTENKA\MatriisiAjot2015\MetropAccess_TravelTimeMatrix" #r"E:\Matriisiajot2015\RESULTS\MetropAccess_TravelTimeMatrix"
 
 # Read input matrix filepaths
 pt_r_paths = filePathsToList(pt_r_dir, criteria='Joukkoliikenne', fileformat='.txt')

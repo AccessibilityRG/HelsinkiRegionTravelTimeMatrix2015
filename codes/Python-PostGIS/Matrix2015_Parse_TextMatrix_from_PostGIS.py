@@ -36,7 +36,7 @@ db_name, host, port, username, pwd = POSTGIS_DB_NAME, IP_ADDRESS, POSTGIS_PORT, 
 conn, cursor = connect_to_DB(host, db_name, username, pwd, port)
 
 # File paths
-ykr_fp = r"C:\HY-Data\HENTENKA\Python\MassaAjoNiputus\ShapeFileet\MetropAccess_YKR_grid\MetropAccess_YKR_grid_EurefFIN.shp"
+ykr_fp = r"C:\...\ShapeFiles\MetropAccess_YKR_grid\MetropAccess_YKR_grid_EurefFIN.shp"
 outDir = r"E:\Matriisiajot2015\RESULTS\MetropAccess_TravelTimeMatrix"
 
 # Read YKR_grid
