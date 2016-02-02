@@ -59,11 +59,11 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
   - Download the Linux version of the MetropAccess-Reititin:
   
         $ cd $USERAPPL/reititin
-        $ wget http://www.helsinki.fi/science/accessibility/tools/MetropAccess-Reititin/reititin-linux.tar.gz
+        $ wget http://www.helsinki.fi/science/accessibility/tools/MetropAccess-Reititin/MetropAccess-Reititin_Linux.tar.gz
          
   - Extract the contents
          
-        $ tar xf reititin-linux.tar.gz
+        $ tar xf MetropAccess-Reititin_Linux.tar.gz
          
   - Check that reititin works in Taito (should start making a test routing) 
   
