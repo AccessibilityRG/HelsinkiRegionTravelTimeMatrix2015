@@ -19,17 +19,11 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
 
 <a name='nodejs'></a> **Install *node.js* to Taito**:
 
-   - Create folders for mcl and nodejs to appl_taito:
+   - Create folders for nodejs to appl_taito:
    
-         $ mkdir -p $USERAPPL/{mcl,nodejs}
+         $ mkdir -p $USERAPPL/nodejs
          
-   - Download mcl and extract it ( **might not be needed** ):
-          
-          $ cd $USERAPPL/mcl
-          $ wget http://www.micans.org/mcl/src/mcl-latest.tar.gz
-          $ tar xf mcl-latest.tar.gz
-   
-   - Download the latest version of node.js (source files), extract it to 4.1.2 (here to *4.1.2* ==> Change accordingly to what is the version you use):
+   - Download the version 4.1.2 of node.js (source files) and extract it (here files will be located in *node-v4.1.2* ==> Change accordingly to what is the version you use):
           
           $ cd $USERAPPL/nodejs
           $ wget https://nodejs.org/download/release/v4.1.2/node-v4.1.2.tar.gz
@@ -71,7 +65,7 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
          
         $ tar xf reititin-linux.tar.gz
          
-  - Check that reititin works in Taito (should start making a test routing) Todo: PÄIVITÄ REITITIN-LINUX PAKETTIIN ROUTE.SH TIEDOSTO OIKEAKSI!!!
+  - Check that reititin works in Taito (should start making a test routing) 
   
         $ cd $USERAPPL/reititin/reititin/build
         $ ./route.sh
