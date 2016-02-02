@@ -43,9 +43,6 @@ Steps 4-5 were done on a local computer with 16GB of RAM, using Python and Postg
          2. [Geopandas calculation script](Pouta/Python-Codes/TTM15_run_Geopandas.py)
          3. [Control file](Pouta/Python-Codes/TTM15_runModular.py)
           
-  
-The analyses and processing phases support multiprocessing using Python [multiprocessing](https://docs.python.org/3.4/library/multiprocessing.html) module 
-that makes possible to do processing in parallel utilizing multiple processors on a given machine. ==> Makes possible to do things faster. 
  
 ## 4. Combining Private Car and PT results + creating PostGIS matrix 
 
