@@ -5,7 +5,7 @@ Our calculation problem is of type ['embarassingly parallel'](https://en.wikiped
 computing cores as possible. We use [Taito Array Jobs](https://research.csc.fi/taito-array-jobs) for this purpose. 
 
 ## Contents
- - [Installing MetropAccess-Reititin + dependencies to Taito](#reititin-dep)
+ - [Installing MetropAccess-Reititin + dependencies to Taito](#Installing-MetropAccess-Reititin-+-dependencies-to-Taito)
     - [Nodejs](#nodejs)
     - [MetropAccess-Reititin](#reititin)
     
@@ -13,7 +13,7 @@ computing cores as possible. We use [Taito Array Jobs](https://research.csc.fi/t
     - [Necessary steps](#necessary-steps)
     - [Array job files that were used for Helsinki Region Travel Time/Co2 Matrix 2015](#array-jobs)
 
-##<a name='reititin-dep'></a>Installing MetropAccess-Reititin + dependencies to Taito
+## Installing MetropAccess-Reititin + dependencies to Taito
 
 MetropAccess-Reititin is written in Javascript and running it locally requires node.js to be installed.  
 
@@ -50,7 +50,7 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
      
          $ node
        
-<a name='reititin'></a> **Install MetropAccess-Reititin**:
+### Install MetropAccess-Reititin
 
   - Make directory for MetropAccess-Reititin:
         
@@ -71,7 +71,7 @@ MetropAccess-Reititin is written in Javascript and running it locally requires n
         $ ./route.sh
       
 
-## <a name='array-job-reititin'></a>Creating an array job for Taito using Reititin
+## Creating an array job for Taito using Reititin
 
 Running MetropAccess-Reititin in parallel in Taito can be done easily using Taito **Array Jobs**.
 Using array jobs it is possible to divide the calculations to multiple separate jobs running on a different CPU. 
@@ -81,7 +81,7 @@ Our calculations was divided on 293 individual subtasks where each task included
 ([an example of a origin file](../../data/PT/Subsets/1_Matrix2015_Origs_WGS84.txt)) to 14 645 destination locations ([see the destination file](../../data/PT/destPoints.txt)).
 All public transportation origin and destination files that were used in calculations are [here](../../data/PT/). 
 
-**<a name='necessary-steps'></a>Necessary steps for creating an Array Job (\*.lsf -file) for MetropAccess-Reititin**:
+### Necessary steps for creating an Array Job (\*.lsf -file) for MetropAccess-Reititin
 
   1. Define the job range and other Taito related parameters (starting with #SBATCH keyword)
   2. [Swap from Intel compiler to GCC](#swap)
